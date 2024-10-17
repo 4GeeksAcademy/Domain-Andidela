@@ -10,13 +10,17 @@ window.onload = function() {
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
+  let extension = [".com", ".net", ".org"];
   for (let i = 0; i < pronoun.length; i++) {
     const pronombre = pronoun[i];
     for (let j = 0; j < adj.length; j++) {
       const adjetivo = adj[j];
       for (let k = 0; k < noun.length; k++) {
         const sustantivo = noun[k];
-        console.log(pronombre + adjetivo + sustantivo);
+        for (let m = 0; m < extension.length; m++) {
+          const final = extension[m];
+          console.log(pronombre + adjetivo + sustantivo + final);
+        }
       }
     }
   }
